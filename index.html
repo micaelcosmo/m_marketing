@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title"></h1>
+            <p id="hero-subtitle"></p>
+            <a href="#product-section" class="scroll-down-btn" id="hero-cta"></a>
+        </div>
+    </header>
+
+    <section id="product-section" class="product-showcase">
+        <h2 class="section-title" id="section-title"></h2>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> Todos</button>
+            <button class="filter-btn" data-filter="amazon"><i class="fab fa-amazon"></i> Amazon</button>
+            <button class="filter-btn" data-filter="mercadolivre"><i class="fas fa-store"></i> Mercado Livre</button>
+            <button class="filter-btn" data-filter="aliexpress"><i class="fas fa-shipping-fast"></i> AliExpress</button>
+        </div>
+
+        <main class="product-grid" id="product-grid"></main>
+    </section>
+
+    <footer>
+        <p id="footer-copyright"></p>
+        <p class="disclaimer" id="footer-disclaimer"></p>
+        <div class="social-links" id="footer-social"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

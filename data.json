@@ -1,0 +1,86 @@
+{
+  "pageTitle": "✨ Achadinhos da Web | Suas Melhores Ofertas ✨",
+  "header": {
+    "mainHeading": "<i class=\"fas fa-magic\"></i> Achadinhos da Web <i class=\"fas fa-gift\"></i>",
+    "subtitle": "Sua fonte diária das ofertas mais quentes e imperdíveis da internet, curadas especialmente para você.",
+    "ctaButtonText": "<i class=\"fas fa-chevron-down\"></i> Explore as Ofertas"
+  },
+  "sectionTitle": "Nossos Últimos Achadinhos",
+  "footer": {
+    "copyright": "&copy; 2025 Achadinhos da Web. Todos os direitos reservados.",
+    "disclaimer": "Esta página pode conter links de afiliados. Ao comprar através deles, recebemos uma comissão sem custo adicional para você.",
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#"
+    }
+  },
+  "products": [
+    {
+      "store": "amazon",
+      "badgeText": "Amazon Prime",
+      "name": "Fone de Ouvido Bluetooth Pro",
+      "description": "Cancelamento de ruído ativo, bateria de longa duração e áudio imersivo.",
+      "imgSrc": "https://picsum.photos/id/10/300/200",
+      "imgAlt": "Fone de Ouvido Bluetooth Pro",
+      "oldPrice": "R$ 299,90",
+      "newPrice": "R$ 189,90",
+      "link": "SEU-LINK-DE-AFILIADO-AMAZON-AQUI-1"
+    },
+    {
+      "store": "aliexpress",
+      "badgeText": "Super Promoção",
+      "name": "Smartwatch X-2000",
+      "description": "Monitora 20+ esportes, bateria de 15 dias e tela AMOLED vibrante.",
+      "imgSrc": "https://picsum.photos/id/1074/300/200",
+      "imgAlt": "Smartwatch X-2000",
+      "oldPrice": null,
+      "newPrice": "R$ 112,50",
+      "link": "SEU-LINK-DE-AFILIADO-ALIEXPRESS-AQUI-1"
+    },
+    {
+      "store": "mercadolivre",
+      "badgeText": "Envio Full",
+      "name": "Kit Ferramentas 120 peças",
+      "description": "Maleta completa para todos os reparos domésticos. Qualidade profissional.",
+      "imgSrc": "https://picsum.photos/id/25/300/200",
+      "imgAlt": "Kit Ferramentas 120 peças",
+      "oldPrice": "R$ 210,00",
+      "newPrice": "R$ 179,90",
+      "link": "SEU-LINK-DE-AFILIADO-MERCADOLIVRE-AQUI-1"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Oferta Relâmpago",
+      "name": "Cafeteira Expressa Pessoal",
+      "description": "Café fresco e aromático em segundos. Design compacto e fácil de usar.",
+      "imgSrc": "https://picsum.photos/id/175/300/200",
+      "imgAlt": "Cafeteira Expressa Pessoal",
+      "oldPrice": null,
+      "newPrice": "R$ 229,00",
+      "link": "SEU-LINK-DE-AFILIADO-AMAZON-AQUI-2"
+    },
+    {
+      "store": "mercadolivre",
+      "badgeText": "Novo na Loja",
+      "name": "Câmera de Segurança Smart",
+      "description": "Monitore sua casa de qualquer lugar com acesso remoto e detecção de movimento.",
+      "imgSrc": "https://picsum.photos/id/35/300/200",
+      "imgAlt": "Câmera de Segurança Smart",
+      "oldPrice": "R$ 350,00",
+      "newPrice": "R$ 289,99",
+      "link": "SEU-LINK-DE-AFILIADO-MERCADOLIVRE-AQUI-2"
+    },
+    {
+      "store": "aliexpress",
+      "badgeText": "Frete Grátis",
+      "name": "Mini Projetor Portátil HD",
+      "description": "Transforme qualquer parede em uma tela de cinema. Compacto e poderoso.",
+      "imgSrc": "https://picsum.photos/id/237/300/200",
+      "imgAlt": "Mini Projetor Portátil HD",
+      "oldPrice": null,
+      "newPrice": "R$ 450,00",
+      "link": "SEU-LINK-DE-AFILIADO-ALIEXPRESS-AQUI-2"
+    }
+  ]
+}

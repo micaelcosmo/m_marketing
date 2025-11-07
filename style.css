@@ -1,0 +1,456 @@
+/* --- Variáveis Globais Aprimoradas --- */
+:root {
+    --primary-color: #6a00ff; /* Roxo vibrante */
+    --secondary-color: #00bcd4; /* Ciano chamativo */
+    --accent-color: #ff007f; /* Magenta quente */
+    --card-bg: #ffffff;
+    --body-bg: #f0f2f5; /* Cinza claro suave */
+    --text-color: #212529; /* Preto quase absoluto */
+    --text-light: #6c757d; /* Cinza para textos secundários */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto Mono', monospace; /* Para um toque tech */
+    --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.12);
+    --border-radius-lg: 15px;
+    --border-radius-sm: 8px;
+}
+
+/* --- Reset Básico e Estilos Globais --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Hero Section (Header aprimorado) --- */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px 60px;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: var(--border-radius-lg);
+    border-bottom-right-radius: var(--border-radius-lg);
+    margin-bottom: 40px;
+}
+
+.hero::before { /* Elemento para um gradiente de fundo mais complexo */
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.1) 0%, transparent 70%);
+    transform: rotate(10deg);
+}
+
+.hero-content {
+    position: relative; /* Para garantir que o conteúdo fique acima do ::before */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 i {
+    margin: 0 10px;
+    color: var(--secondary-color); /* Ícones com cor de destaque */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.scroll-down-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+}
+
+.scroll-down-btn:hover {
+    background-color: #00a4bd;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 188, 212, 0.4);
+}
+
+.scroll-down-btn i {
+    margin-right: 8px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* --- Seção de Produtos --- */
+.product-showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px 50px;
+}
+
+.section-title {
+    font-family: var(--font-secondary);
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* --- Filtros --- */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+    display: inline-flex;
+    align-items: center;
+}
+
+.filter-btn i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.filter-btn:hover {
+    background-color: var(--body-bg);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    box-shadow: 0 6px 20px rgba(106, 0, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active i {
+    color: white;
+}
+
+/* --- Grid de Produtos --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    /* Removemos o "animation: fadeIn" daqui para deixar o JS controlar */
+}
+
+/* --- Card de Produto --- */
+.product-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borda sutil */
+    
+    /* ******** ATUALIZAÇÃO DO FILTRO ******** */
+    /* Esta é a linha principal para a animação do filtro */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-medium);
+}
+
+/* ******** NOVAS CLASSES DO FILTRO ******** */
+/* Esta classe controla a aparência visual (o fade) */
+.product-card.hidden-visual {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none; /* Impede cliques durante a animação de saída */
+}
+
+/* Esta classe controla o layout (remove o item do grid) */
+.product-card.hidden-layout {
+    display: none;
+}
+/* ******** FIM DAS ATUALIZAÇÕES DO FILTRO ******** */
+
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 220px; /* Um pouco mais alto */
+    background-color: #eee; /* Placeholder se a imagem não carregar */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .card-image img {
+    transform: scale(1.05); /* Zoom sutil na imagem */
+}
+
+.store-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 7px 12px;
+    border-radius: var(--border-radius-sm);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores dos Badges mais vibrantes */
+.store-badge.amazon { background-color: #FF9900; } /* Amazon Orange */
+.store-badge.mercadolivre { background-color: #FFE600; color: var(--text-color); } /* ML Yellow */
+.store-badge.aliexpress { background-color: #F73340; } /* AliExpress Red */
+
+
+.card-content {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+.price {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap; /* Para preços em linha pequena */
+}
+
+.old-price {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    text-decoration: line-through;
+    margin-right: 12px;
+    font-weight: 400;
+}
+
+.new-price {
+    font-size: 1.8rem; /* Preço maior */
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, var(--secondary-color), #00e5ff);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #00a9c0, #00d2eb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 188, 212, 0.45);
+}
+
+.cta-button i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateX(3px);
+}
+
+/* --- Footer Aprimorado --- */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #343a40; /* Cor escura */
+    color: #e9ecef; /* Texto claro */
+    font-size: 0.9rem;
+    margin-top: 50px;
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    max-width: 700px;
+    margin: 15px auto 20px auto;
+    opacity: 0.8;
+}
+
+.social-links a {
+    color: #e9ecef;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* --- Responsividade Aprimorada --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .filter-container {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+    .product-grid {
+        /*
+         * Note: Eu havia sugerido 'grid-template-columns: 1fr;' aqui antes.
+         * Mas manter 'auto-fill' é melhor para tablets.
+         * Vamos deixar a coluna única apenas para telas menores (abaixo).
+         */
+        padding: 0 15px;
+    }
+    .card-content h3 {
+        font-size: 1.25rem;
+    }
+    .new-price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px 40px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .scroll-down-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .filter-container {
+        flex-direction: column; /* Botões de filtro empilhados */
+        align-items: center;
+    }
+    .filter-btn {
+        width: 90%;
+        max-width: 250px;
+    }
+    .product-grid {
+        grid-template-columns: 1fr; /* Coluna única em telas pequenas */
+    }
+    .product-card {
+        margin: 0 auto;
+        max-width: 350px; /* Limita o tamanho do card em mobile */
+    }
+}
