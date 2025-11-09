@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('hero-title').innerHTML = headerData.mainHeading;
         document.getElementById('hero-subtitle').innerHTML = headerData.subtitle;
         document.getElementById('hero-cta').innerHTML = headerData.ctaButtonText;
+        document.getElementById('meta-description').content = headerData.subtitle;
     }
 
     function renderSectionTitle(title) {
