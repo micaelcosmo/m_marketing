@@ -1,11 +1,11 @@
 {
-  "pageTitle": "✨ Achadinhos da Web | Suas Melhores Ofertas ✨",
+  "pageTitle": "✨ Tech achados da Web | Suas Melhores Ofertas ✨",
   "header": {
-    "mainHeading": "<i class=\"fas fa-magic\"></i> Achadinhos da Web <i class=\"fas fa-gift\"></i>",
-    "subtitle": "Sua fonte diária das ofertas mais quentes e imperdíveis da internet, curadas especialmente para você.",
+    "mainHeading": "<i class=\"fas fa-magic\"></i> Tech achados da Web <i class=\"fas fa-gift\"></i>",
+    "subtitle": "Sua fonte diária das ofertas mais quentes e imperdíveis da internet, especialmente para você.",
     "ctaButtonText": "<i class=\"fas fa-chevron-down\"></i> Explore as Ofertas"
   },
-  "sectionTitle": "Nossos Últimos Achadinhos",
+  "sectionTitle": "Nossas Buscas Recentes",
   "footer": {
     "copyright": "&copy; 2025 Achadinhos da Web. Todos os direitos reservados.",
     "disclaimer": "Esta página pode conter links de afiliados. Ao comprar através deles, recebemos uma comissão sem custo adicional para você.",
@@ -18,14 +18,102 @@
   "products": [
     {
       "store": "amazon",
-      "badgeText": "Amazon Prime",
-      "name": "Lâmpada Inteligente compatível com Alexa e Google Home",
-      "description": "Mais Potente 15W Smart Color RGB Wifi Elgin compatível com Alexa e Google Home.",
-      "imgSrc": "https://m.media-amazon.com/images/I/61G7HTGzINL._AC_SX679_.jpg",
-      "imgAlt": "Lâmpada Inteligente",
-      "oldPrice": "R$ 56,90",
-      "newPrice": "R$ 42,00",
-      "link": "https://amzn.to/3LP0auy"
+      "badgeText": "Escolha da Amazon",
+      "name": "Mouse Sem Fio Logitech M330 SILENT",
+      "description": "Clique Silencioso, design destro, bateria de 18 meses. Acompanha pilha e receptor USB.",
+      "imgSrc": "https://m.media-amazon.com/images/I/61UHRi-KLmL._AC_SL1500_.jpg",
+      "imgAlt": "Mouse Logitech M330 Silent",
+      "oldPrice": null,
+      "newPrice": "R$ 98,92",
+      "link": "https://amzn.to/48uuzaG"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Oferta (-53%)",
+      "name": "Headset Gamer Havit HV-H2232d RGB",
+      "description": "Iluminação RGB, falantes de 50mm e microfone. Conector 3.5mm (P2).",
+      "imgSrc": "https://m.media-amazon.com/images/I/516HwNOJoUL._AC_SL1197_.jpg",
+      "imgAlt": "Headset Havit HV-H2232d",
+      "oldPrice": "R$ 165,00",
+      "newPrice": "R$ 78,00",
+      "link": "https://amzn.to/3KUCiWn"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "1º mais vendido",
+      "name": "Suporte de Notebook em Alumínio Ajustável",
+      "description": "Dobrável com 6 ângulos ergonômicos. Compatível com notebooks de 10 a 17 polegadas.",
+      "imgSrc": "https://m.media-amazon.com/images/I/61ZqTo-kwpL._AC_SL1500_.jpg",
+      "imgAlt": "Suporte de Notebook Alumínio",
+      "oldPrice": "R$ 32,99",
+      "newPrice": "R$ 21,90",
+      "link": "https://amzn.to/4rVMIpE"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "1º mais vendido",
+      "name": "Hub USB-C 7 em 1 Premium",
+      "description": "Saída HDMI 4K, 7 Portas, USB 3.0, Leitor SD e Carregamento PD Tipo C.",
+      "imgSrc": "https://m.media-amazon.com/images/I/71meNHlW9LL._AC_SL1500_.jpg",
+      "imgAlt": "Hub USB-C 7 em 1",
+      "oldPrice": "R$ 39,90",
+      "newPrice": "R$ 37,90",
+      "link": "https://amzn.to/48wUsqh"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Essencial",
+      "name": "Filtro de Linha iCLAMPER Energia 8 (DPS)",
+      "description": "Proteção contra surtos elétricos, 8 tomadas, 10A. Ideal para PC, PS5 e Roteadores.",
+      "imgSrc": "https://m.media-amazon.com/images/I/61e1M8iPuEL._AC_SL1080_.jpg",
+      "imgAlt": "Filtro de Linha iCLAMPER 8",
+      "oldPrice": "R$ 142,99",
+      "newPrice": "R$ 99,99",
+      "link": "https://amzn.to/4q0egIr"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Escolha da Amazon",
+      "name": "Mouse Pad Gamer Mapa Mundi (90x40cm)",
+      "description": "Extra grande com bordas costuradas e base antiderrapante. Speed pad para teclado e mouse.",
+      "imgSrc": "https://m.media-amazon.com/images/I/514KWqFAGTL._AC_.jpg",
+      "imgAlt": "Mouse Pad Mapa Mundi",
+      "oldPrice": null,
+      "newPrice": "R$ 44,98",
+      "link": "https://amzn.to/44ipsrB"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Escolha da Amazon",
+      "name": "Teclado Logitech K120 ABNT2",
+      "description": "Resistente a respingos, perfil fino, teclas silenciosas e conexão USB plug-and-play.",
+      "imgSrc": "https://m.media-amazon.com/images/I/61quwkR0YzL._AC_SL1500_.jpg",
+      "imgAlt": "Teclado Logitech K120",
+      "oldPrice": "R$ 79,90",
+      "newPrice": "R$ 71,90",
+      "link": "https://amzn.to/48HEFDW"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Gamer",
+      "name": "Teclado Gamer Redragon Netherbane RGB",
+      "description": "Teclado de membrana K521-RGB, iluminação customizável e layout confortável.",
+      "imgSrc": "https://m.media-amazon.com/images/I/71oevbiISHL._AC_SL1500_.jpg",
+      "imgAlt": "Teclado Redragon Netherbane",
+      "oldPrice": null,
+      "newPrice": "R$ 99,99",
+      "link": "https://amzn.to/4oLAdKk"
+    },
+    {
+      "store": "amazon",
+      "badgeText": "Portátil",
+      "name": "Kit Teclado e Mouse Bluetooth Ultrafino",
+      "description": "Sem fio, recarregável e portátil. Compatível com Android, iOS (iPad/iPhone) e Windows.",
+      "imgSrc": "https://m.media-amazon.com/images/I/51o16JyN-rL._AC_SL1024_.jpg",
+      "imgAlt": "Kit Teclado e Mouse Bluetooth",
+      "oldPrice": "R$ 49,90",
+      "newPrice": "R$ 47,40",
+      "link": "https://amzn.to/4oMxW1k"
     }
   ]
 }
